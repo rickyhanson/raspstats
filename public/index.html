@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Data</title>
+  <!-- Include Chart.js for graphing -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+</head>
+<body>
+  <h1>Temperature Data</h1>
+
+  <!-- Table for displaying temperature data -->
+  <table id="temperatureTable" border="1">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Temperature (&deg;C)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data rows will be inserted here -->
+    </tbody>
+  </table>
+
+  <!-- Canvas for the graph -->
+  <canvas id="temperatureChart" width="400" height="200"></canvas>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
